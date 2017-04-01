@@ -94,6 +94,9 @@ tr {
   border-top: 1px solid #D3D3D3;
   border-bottom: 1px solid #D3D3D3;
 }
+tbody tr:hover {
+  background-color: rgba(254, 225, 51, 0.3);
+}
 th, td {
   padding: 5px;
   vertical-align: middle;
@@ -143,6 +146,9 @@ footer .copyright {
   table, tbody, tr, td {
     display: block;
     border: none;
+  }
+  tbody tr:hover {
+    background: #fff;
   }
   table {
     border-bottom: 1px solid #D3D3D3;
