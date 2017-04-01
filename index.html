@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="app.css">
+    <title>Расписание занятий</title>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="nav-wrap">
+                <a href="http://www.yandex.ru" class="nav-home">
+                  <img src="logo.svg" alt="logo" height="100px" width="140px"/>
+                </a>
+                <ul>
+                    <li><a href="" class="active">Лекции</a></li>
+                    <li><a href="">Школы</a></li>
+                    <li><a href="">Аудитории</a></li>
+                    <li><a href="">Лекторы</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="introduction">
+            <h1>Расписание занятий</h1>
+            <div class="introduction-text">
+                <p>На занятиях, среди прочего, мы поговорим про разработку для мобильных платформ с использованием веб-технологий (как для браузеров, так и для гибридных приложений).</p>
+                <div class="img-container">
+                  <img src="orig.png" alt="academy picture" />
+                </div>
+            </div>
+        </div>
+        <div class="filter-options">
+            <div class="filter-option">
+                <label for="school-filter">Школа</label>
+                <input id="school-filter" type="text" />
+            </div>
+            <div class="filter-option">
+                <label for="teacher-filter">Лектор</label>
+                <input id="teacher-filter" />
+            </div>
+            <div class="filter-option">
+                <label for="date-filter">Дата</label>
+                <input id="date-filter" />
+            </div>
+        </div>
+        <table>
+            <colgroup>
+                <col width="25%"/>
+                <col width="30%"/>
+                <col width="15%"/>
+                <col width="15%"/>
+                <col width="15%"/>
+            </colgroup>
+            <thead>
+            <tr>
+                <th>Школа</th>
+                <th>Лекция</th>
+                <th>Лектор</th>
+                <th>Дата</th>
+                <th>Место</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td data-th="Школа">Школа разработки интерфейсов</td>
+                <td data-th="Лекция">Адаптивная вёрстка</td>
+                <td data-th="Лектор">Дмитрий Душкин</td>
+                <td data-th="Дата">01 октября 2016</td>
+                <td data-th="Место">Аудитория 1</td>
+            </tr>
+            <tr>
+                <td data-th="Школа">Школа разработки интерфейсов</td>
+                <td data-th="Лекция">Работа с сенсорным пользовательским вводом</td>
+                <td data-th="Лектор">Дмитрий Душкин</td>
+                <td data-th="Дата">15 октября 2016</td>
+                <td data-th="Место">Аудитория 2</td>
+            </tr>
+            <tr>
+                <td data-th="Школа" class="td-sub">
+                    <div class="sub-row">Школа разработки интерфейсов</div>
+                    <div class="sub-row">Школа мобильного дизайна</div>
+                </td>
+                <td data-th="Лекция">Мультимедиа: возможности браузера</td>
+                <td data-th="Лектор">Максим Васильев</td>
+                <td data-th="Дата">1 ноября 2016</td>
+                <td data-th="Место">Аудитория 1</td>
+            </tr>
+            <tr>
+                <td data-th="Школа">Школа разработки интерфейсов</td>
+                <td data-th="Лекция">Нативные приложения на веб-технологиях</td>
+                <td data-th="Лектор">Сергей Бережной</td>
+                <td data-th="Дата">10 ноября 2016</td>
+                <td data-th="Место">Аудитория 2</td>
+            </tr>
+            <tr>
+                <td data-th="Школа">Школа разработки интерфейсов</td>
+                <td data-th="Лекция">Клиентская оптимизация: базовые знания и лучшие практики</td>
+                <td data-th="Лектор">Андрей Морозов</td>
+                <td data-th="Дата">20 ноября 2016</td>
+                <td data-th="Место">Аудитория 3</td>
+            </tr>
+            <tr>
+                <td data-th="Школа">Школа разработки интерфейсов</td>
+                <td data-th="Лекция">Клиентская оптимизация: мобильные устройства и инструменты</td>
+                <td data-th="Лектор">Иван Карев</td>
+                <td data-th="Дата">30 ноября 2016</td>
+                <td data-th="Место">Аудитория 3</td>
+            </tr>
+            <tr>
+                <td data-th="Школа">Школа разработки интерфейсов</td>
+                <td data-th="Лекция">Инфраструктура веб-проектов</td>
+                <td data-th="Лектор">Прокопюк Андрей</td>
+                <td data-th="Дата">1 декабря 2016</td>
+                <td data-th="Место">Аудитория 1</td>
+            </tr>
+            <tr>
+                <td data-th="Школа">Школа разработки интерфейсов</td>
+                <td data-th="Лекция">Инструменты разработки мобильного фронтенда</td>
+                <td data-th="Лектор">Прокопюк Андрей</td>
+                <td data-th="Дата">15 декабря 2016</td>
+                <td data-th="Место">Аудитория 2</td>
+            </tr>
+            <tr>
+                <td data-th="Школа">Школа мобильной разработки</td>
+                <td data-th="Лекция">Java Blitz (Часть 1)</td>
+                <td data-th="Лектор">Эдуард Мацуков</td>
+                <td data-th="Дата">15 декабря 2016</td>
+                <td data-th="Место">Аудитория 2</td>
+            </tr>
+            <tr>
+                <td data-th="Школа">Школа мобильной разработки</td>
+                <td data-th="Лекция">Git & Workflow</td>
+                <td data-th="Лектор">Дмитрий Складнов</td>
+                <td data-th="Дата">15 декабря 2016</td>
+                <td data-th="Место">Аудитория 2</td>
+            </tr>
+            <tr>
+                <td data-th="Школа">Школа мобильной разработки</td>
+                <td data-th="Лекция">Java Blitz (Часть 2)</td>
+                <td data-th="Лектор">Эдуард Мацуков</td>
+                <td data-th="Дата">15 декабря 2016</td>
+                <td data-th="Место">Аудитория 2</td>
+            </tr>
+            <tr>
+                <td data-th="Школа">Школа мобильной разработки</td>
+                <td data-th="Лекция">MyFirstApp (Часть 1)</td>
+                <td data-th="Лектор">Роман Григорьев</td>
+                <td data-th="Дата">15 декабря 2016</td>
+                <td data-th="Место">Аудитория 2</td>
+            </tr>
+            <tr>
+                <td data-th="Школа">Школа мобильной разработки</td>
+                <td data-th="Лекция">MyFirstApp (Часть 2)</td>
+                <td data-th="Лектор">Роман Григорьев</td>
+                <td data-th="Дата">15 декабря 2016</td>
+                <td data-th="Место">Аудитория 2</td>
+            </tr>
+            <tr>
+                <td data-th="Школа">Школа мобильной разработки</td>
+                <td data-th="Лекция">ViewGroup</td>
+                <td data-th="Лектор">Алексей Щербинин</td>
+                <td data-th="Дата">15 декабря 2016</td>
+                <td data-th="Место">Аудитория 2</td>
+            </tr>
+            <tr>
+                <td data-th="Школа">Школа мобильной разработки</td>
+                <td data-th="Лекция">Background</td>
+                <td data-th="Лектор">Алексей Макаров</td>
+                <td data-th="Дата">15 декабря 2016</td>
+                <td data-th="Место">Аудитория 2</td>
+            </tr>
+            <tr>
+                <td data-th="Школа">Школа мобильной разработки</td>
+                <td data-th="Лекция">RecyclerView</td>
+                <td data-th="Лектор">Владимир Тагаков</td>
+                <td data-th="Дата">15 декабря 2016</td>
+                <td data-th="Место">Аудитория 2</td>
+            </tr>
+            <tr>
+                <td data-th="Школа">Школа мобильного дизайна</td>
+                <td data-th="Лекция">Идея, исследование, концепт (Часть 1)</td>
+                <td data-th="Лектор">Антон Тен</td>
+                <td data-th="Дата">15 декабря 2016</td>
+                <td data-th="Место">Аудитория 2</td>
+            </tr>
+            <tr>
+                <td data-th="Школа">Школа мобильного дизайна</td>
+                <td data-th="Лекция">Идея, исследование, концепт (Часть 2)</td>
+                <td data-th="Лектор">Антон Тен</td>
+                <td data-th="Дата">15 декабря 2016</td>
+                <td data-th="Место">Аудитория 2</td>
+            </tr>
+            <tr>
+                <td data-th="Школа">Школа мобильного дизайна</td>
+                <td data-th="Лекция">Особенности проектирования мобильных интерфейсов</td>
+                <td data-th="Лектор">Васюнин Николай</td>
+                <td data-th="Дата">15 декабря 2016</td>
+                <td data-th="Место">Аудитория 2</td>
+            </tr>
+            <tr>
+                <td data-th="Школа">Школа мобильного дизайна</td>
+                <td data-th="Лекция">Продукт и платформа</td>
+                <td data-th="Лектор">Сергей Калабин</td>
+                <td data-th="Дата">15 декабря 2016</td>
+                <td data-th="Место">Аудитория 2</td>
+            </tr>
+            <tr>
+                <td data-th="Школа">Школа мобильного дизайна</td>
+                <td data-th="Лекция">Природа операционных систем</td>
+                <td data-th="Лектор">Васюнин Николай</td>
+                <td data-th="Дата">15 декабря 2016</td>
+                <td data-th="Место">Аудитория 2</td>
+            </tr>
+            <tr>
+                <td data-th="Школа">Школа мобильного дизайна</td>
+                <td data-th="Лекция">Прототипирование как процесс</td>
+                <td data-th="Лектор" class="td-sub">
+                    <div class="sub-row">Сергей Томилов</div>
+                    <div class="sub-row">Дарья Старицына</div>
+                </td>
+                <td data-th="Дата">15 декабря 2016</td>
+                <td data-th="Место">Аудитория 2</td>
+            </tr>
+            <tr>
+                <td data-th="Школа">Школа мобильного дизайна</td>
+                <td data-th="Лекция">Инструмент под задачи</td>
+                <td data-th="Лектор" class="td-sub">
+                    <div class="sub-row">Сергей Томилов</div>
+                    <div class="sub-row">Дарья Старицына</div>
+                </td>
+                <td data-th="Дата">15 декабря 2016</td>
+                <td data-th="Место">Аудитория 2</td>
+            </tr>
+            <tr>
+                <td data-th="Школа">Школа мобильного дизайна</td>
+                <td data-th="Лекция">Анимации</td>
+                <td data-th="Лектор" class="td-sub">
+                    <div class="sub-row">Сергей Томилов</div>
+                    <div class="sub-row">Дарья Старицына</div>
+                </td>
+                <td data-th="Дата">15 декабря 2016</td>
+                <td data-th="Место">Аудитория 2</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+    <footer>
+        <a href="https://academy.yandex.ru/" target="_blank" class="footer-logo">
+          <img src="orig1.png" alt="logo" />
+        </a>
+        <section class="copyright">Copyright © 2017 Яндекс.Академия</section>
+    </footer>
+</body>
+</html>
