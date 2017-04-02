@@ -182,9 +182,9 @@ footer .copyright {
 }
 /* Модальное окно */
 .content .modal-window {
+  display: flex;
   position: fixed;
   z-index: 1;
-  padding-top: 150px;
   left: 0;
   top: 0;
   width: 100%;
@@ -195,7 +195,7 @@ footer .copyright {
 .modal {
   width: 80%;
   max-width: 600px;
-  margin: 0 auto;
+  margin: auto;
   padding: 10px;
   line-height: 1.2em;
   background-color: #fff;
