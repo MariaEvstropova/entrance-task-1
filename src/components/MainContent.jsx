@@ -1,7 +1,6 @@
 import React from 'react';
 import FilterInput from './FilterInput.jsx';
 import Table from './Table.jsx';
-import {data} from './tableData';
 
 export default class MainContent extends React.Component {
     constructor() {
@@ -68,7 +67,10 @@ export default class MainContent extends React.Component {
                     <FilterInput inputName="teacher" labelText="Лектор" handleFilterChange={this.handleFilterChange}/>
                     <FilterInput inputName="date" labelText="Дата" handleFilterChange={this.handleFilterChange}/>
                 </div>
-                <Table tableData={this.filterData(this.state.school, this.state.teacher, this.state.date, data)}/>
+                <Table
+                    tableData={this.filterData(this.state.school, this.state.teacher, this.state.date, this.props.data)}
+                    handleTeaherDetails={this.props.handleTeaherDetails.bind(this)}
+                />
             </div>
         );
     }

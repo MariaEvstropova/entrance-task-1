@@ -3,7 +3,7 @@ import React from 'react';
 export default class TableRow extends React.Component {
     render() {
         return (
-            <tr className={!!this.props.video ? "finished" : ""}>
+            <tr className={!!this.props.video ? "finished" : ""} >
                 <td data-th="Школа">
                 {
                     Array.isArray(this.props.school) ? (
@@ -14,11 +14,11 @@ export default class TableRow extends React.Component {
                 }
                 </td>
                 <td data-th="Лекция">{this.props.lecture}</td>
-                <td data-th="Лектор" className={Array.isArray(this.props.teacher) ? "td-sub" : ""}>
+                <td data-th="Лектор" className={Array.isArray(this.props.teacher) ? "td-sub" : ""} onClick={this.props.handleTeaherDetails.bind(this, this.props.teacher)}>
                 {
                     Array.isArray(this.props.teacher) ? (
                         this.props.teacher.map((teacher, index) => {
-                            return <div className="sub-row" key={index}>{teacher}</div>
+                            return <div className="sub-row" key={index} onClick={this.props.handleTeaherDetails.bind(this, teacher)}>{teacher}</div>
                         })
                     ) : this.props.teacher
                 }

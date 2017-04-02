@@ -1,8 +1,8 @@
 import ReactDom from 'react-dom';
 import React from 'react';
-import MainContent from './components/MainContent.jsx';
+import Content from './components/Content.jsx';
 
 ReactDom.render(
-    <MainContent />,
+    <Content />,
     document.getElementById('mount-point')
 );

@@ -4,7 +4,7 @@ import TableRow from './TableRow.jsx';
 export default class Table extends React.Component {
     render() {
         let rows = this.props.tableData.map((data, index) => {
-            return <TableRow {...data} key={index}/>
+            return <TableRow {...data} key={index} handleTeaherDetails={this.props.handleTeaherDetails.bind(this)}/>
         });
         return (
             <table>
