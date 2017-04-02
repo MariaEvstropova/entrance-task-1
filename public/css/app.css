@@ -34,6 +34,9 @@ body {
   opacity: .6;
   padding: 0 5px;
 }
+.nav a:hover {
+  opacity: .7;
+}
 .nav a.active {
   opacity: 1;
 }
@@ -100,6 +103,9 @@ tbody tr:hover {
 }
 tr.finished {
   background-color: rgba(211, 211, 211, 0.5);
+}
+tr.finished td:last-child {
+  text-align: center;
 }
 tr.finished:hover {
   background-color: rgba(211, 211, 211, 0.5);
@@ -217,6 +223,7 @@ footer .copyright {
   }
   tr.finished td:last-child {
     padding-bottom: 10px;
+    text-align: left;
   }
   tr:not(.finished) td:not(:first-child):hover {
     background-color: rgba(254, 225, 51, 0.3);
