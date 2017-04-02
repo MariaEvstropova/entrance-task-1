@@ -147,10 +147,10 @@ th {
 td.td-sub {
   padding-left: 0px;
 }
-td[data-th="Лектор"] {
+td[data-th="Лектор"] span {
     cursor: pointer;
 }
-td[data-th="Лектор"]:hover {
+td[data-th="Лектор"] span:hover {
     color: #e61400;
 }
 td.td-sub > div {

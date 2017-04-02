@@ -18,9 +18,9 @@ export default class TableRow extends React.Component {
                 {
                     Array.isArray(this.props.teacher) ? (
                         this.props.teacher.map((teacher, index) => {
-                            return <div className="sub-row" key={index} onClick={this.props.handleTeaherDetails.bind(this, teacher)}>{teacher}</div>
+                            return <div className="sub-row" key={index} onClick={this.props.handleTeaherDetails.bind(this, teacher)}><span>{teacher}</span></div>
                         })
-                    ) : this.props.teacher
+                    ) : <span>{this.props.teacher}</span>
                 }
                 </td>
                 <td data-th="Дата">{this.props.date}</td>
