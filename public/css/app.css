@@ -13,6 +13,11 @@ body {
 .content {
   flex: 1 0 auto;
 }
+/*Фикс для скрола за модальным окном*/
+.fixed {
+  position: fixed;
+  overflow-y: scroll;
+}
 /* Навигация */
 .nav {
   background-color: #e61400;
@@ -168,7 +173,7 @@ td div.sub-row:last-child {
 }
 /* Футер */
 footer {
-  margin-top: 20px;
+  margin-top: 5px;
   margin-bottom: 10px;
 }
 footer .footer-logo img {

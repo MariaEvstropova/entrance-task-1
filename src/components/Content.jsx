@@ -28,6 +28,8 @@ export default class Content extends React.Component {
                 modalShown: true,
                 modalData: data
             });
+            let content = document.querySelector(".content");
+            content.classList.add("fixed");
         }
     }
 
