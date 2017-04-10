@@ -11,13 +11,17 @@ export default class Content extends React.Component {
             modalShown: false,
             modalData: ""
         };
-        this.handleTeaherDetails = this.handleTeaherDetails.bind(this);
+        this.handleTeacherDetails = this.handleTeacherDetails.bind(this);
     }
 
-    handleTeaherDetails(name) {
-        let data = teacherData.find((teacher) => {
-            return teacher.name == name;
-        });
+    handleTeacherDetails(name) {
+        let data;
+        for (let i = 0; i < teacherData.length; i++) {
+            if (teacherData[i]["name"] == name) {
+                data = teacherData[i];
+                break;
+            }
+        }
 
         if (data) {
             this.setState({
@@ -30,7 +34,7 @@ export default class Content extends React.Component {
     render() {
         return (
             <div>
-                <MainContent data={data} handleTeaherDetails={this.handleTeaherDetails}/>
+                <MainContent data={data} handleTeacherDetails={this.handleTeacherDetails}/>
                 <ModalWindow data={this.state.modalData} shown={this.state.modalShown}/>
             </div>
         );

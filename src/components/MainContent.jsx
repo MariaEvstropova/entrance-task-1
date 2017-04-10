@@ -69,7 +69,7 @@ export default class MainContent extends React.Component {
                 </div>
                 <Table
                     tableData={this.filterData(this.state.school, this.state.teacher, this.state.date, this.props.data)}
-                    handleTeaherDetails={this.props.handleTeaherDetails.bind(this)}
+                    handleTeacherDetails={this.props.handleTeacherDetails.bind(this)}
                 />
             </div>
         );

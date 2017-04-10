@@ -14,11 +14,11 @@ export default class TableRow extends React.Component {
                 }
                 </td>
                 <td data-th="Лекция">{this.props.lecture}</td>
-                <td data-th="Лектор" className={Array.isArray(this.props.teacher) ? "td-sub" : ""} onClick={this.props.handleTeaherDetails.bind(this, this.props.teacher)}>
+                <td data-th="Лектор" className={Array.isArray(this.props.teacher) ? "td-sub" : ""} onClick={this.props.handleTeacherDetails.bind(this, this.props.teacher)}>
                 {
                     Array.isArray(this.props.teacher) ? (
                         this.props.teacher.map((teacher, index) => {
-                            return <div className="sub-row" key={index} onClick={this.props.handleTeaherDetails.bind(this, teacher)}><span>{teacher}</span></div>
+                            return <div className="sub-row" key={index} onClick={this.props.handleTeacherDetails.bind(this, teacher)}><span>{teacher}</span></div>
                         })
                     ) : <span>{this.props.teacher}</span>
                 }
