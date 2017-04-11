@@ -6,9 +6,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   color: #000;
-  display: -webkit-flex;
   display: flex;
-  -webkit-flex-direction: column;
   flex-direction: column;
   min-height: 100%;
 }
@@ -71,35 +69,25 @@ body {
   margin: 20px auto;
 }
 .introduction-text {
-  display: -webkit-flex;
   display: flex;
-  -webkit-flex-direction: row;
   flex-direction: row;
-  -webkit-align-items: center;
   align-items: center;
-  -webkit-justify-content: space-around;
   justify-content: space-around;
   line-height: 1.2em;
 }
 
 /* Фильтрация */
 .filter-options {
-  display: -webkit-flex;
   display: flex;
-  -webkit-flex-direction: row;
   flex-direction: row;
-  -webkit-justify-content: space-around;
   justify-content: space-around;
-  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 .filter-option {
   padding: 5px;
-  display: -webkit-flex;
   display: flex;
-  -webkit-align-items: center;
   align-items: center;
 }
 .filter-option label {
@@ -112,7 +100,7 @@ body {
   width: 100%;
 }
 .filter-option input:focus {
-  outline: #fee133 auto 1px;
+  outline: #fee133 auto 5px;
 }
 
 /* Непосредственно расписание */
@@ -185,7 +173,7 @@ td div.sub-row:last-child {
 }
 /* Футер */
 footer {
-  margin-top: 5px;
+  margin-top: 20px;
   margin-bottom: 10px;
 }
 footer .footer-logo img {
@@ -201,7 +189,6 @@ footer .copyright {
 }
 /* Модальное окно */
 .content .modal-window {
-  display: -webkit-flex;
   display: flex;
   position: fixed;
   z-index: 1;
@@ -247,9 +234,7 @@ footer .copyright {
   opacity: .8;
 }
 .modal-content {
-  display: -webkit-flex;
   display: flex;
-  -webkit-flex-direction: row;
   flex-direction: row;
 }
 .modal-photo img {
@@ -343,14 +328,12 @@ footer .copyright {
     font-weight: bold;
   }
   .introduction-text {
-    -webkit-flex-direction: column;
     flex-direction: column;
   }
   .img-container {
     padding-top: 10px;
   }
   .filter-options {
-    -webkit-flex-direction: column;
     flex-direction: column;
   }
   .content .modal-window {
@@ -362,9 +345,7 @@ footer .copyright {
     box-sizing: border-box;
   }
   .modal-content {
-    -webkit-flex-direction: column;
     flex-direction: column;
-    -webkit-align-items: center;
     align-items: center;
   }
   .modal-info {

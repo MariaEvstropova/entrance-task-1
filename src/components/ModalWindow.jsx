@@ -28,7 +28,7 @@ export default class ModalWindow extends React.Component {
         this.setState({
             shown: false
         });
-        let content = document.querySelector(".content");
+        let content = document.querySelector("body");
         content.classList.remove("fixed");
     }
 

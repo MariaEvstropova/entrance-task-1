@@ -28,7 +28,7 @@ export default class Content extends React.Component {
                 modalShown: true,
                 modalData: data
             });
-            let content = document.querySelector(".content");
+            let content = document.querySelector("body");
             content.classList.add("fixed");
         }
     }
