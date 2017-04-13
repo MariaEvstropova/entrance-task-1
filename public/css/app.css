@@ -13,11 +13,6 @@ body {
 .content {
   flex: 1 0 auto;
 }
-/*Фикс для скрола за модальным окном*/
-.fixed {
-  position: fixed;
-  overflow-y: scroll;
-}
 /* Навигация */
 .nav {
   background-color: #e61400;
@@ -353,6 +348,10 @@ footer .copyright {
   }
   .modal-info h1 {
     text-align: center;
+  }
+  /*Фикс для скрола за модальным окном*/
+  .fixed {
+    position: fixed;
   }
 }
 @media screen and (min-width: 600px) {
