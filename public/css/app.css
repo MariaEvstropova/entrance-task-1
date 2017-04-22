@@ -117,9 +117,6 @@ tbody tr:hover {
 tr.finished {
   background-color: rgba(211, 211, 211, 0.5);
 }
-tr.finished td:last-child {
-  text-align: center;
-}
 tr.finished:hover {
   background-color: rgba(211, 211, 211, 0.5);
 }
