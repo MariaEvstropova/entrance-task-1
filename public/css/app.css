@@ -91,11 +91,12 @@ body {
   opacity: .6;
 }
 .filter-option input {
+  border: 1px solid #D3D3D3;
   padding: 5px;
   width: 100%;
 }
 .filter-option input:focus {
-  outline: #fee133 auto 5px;
+  outline: #fee133 auto 1px;
 }
 
 /* Непосредственно расписание */
